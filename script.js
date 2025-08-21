@@ -10,6 +10,14 @@ document.getElementById("lang-en").addEventListener("click", ()=>switchLang("en"
 document.getElementById("lang-hi").addEventListener("click", ()=>switchLang("hi"));
 switchLang("en"); // default English
 
+// Hamburger menu toggle
+const hamburger = document.getElementById('hamburger-menu');
+const navLinksContainer = document.getElementById('nav-links-container');
+
+hamburger.addEventListener('click', () => {
+    navLinksContainer.classList.toggle('active');
+});
+
 // Slideshow
 const slides = [
   "https://res.cloudinary.com/odysseytraveller/image/fetch/f_auto,q_auto,dpr_auto,r_4,w_765,h_612,c_limit/https://cdn.odysseytraveller.com/app/uploads/2020/02/Amber-Fort.jpg",
