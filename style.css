@@ -33,12 +33,18 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
-  position: relative; /* Added to make absolute positioning of AICTE logo work */
 }
 
 .logo-bar img {
   height: 40px;
   width: auto;
+}
+
+.logo-bar .left-logos,
+.logo-bar .right-logos {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the logos within each group */
 }
 
 nav {
@@ -123,22 +129,6 @@ section {
   padding: 80px 15px;
   min-height: 100vh;
 }
-
-/* Updated CSS for logo placement */
-#naac {
-  padding-right: 80%; /* Removed this to prevent conflict with absolute positioning. It's no longer necessary. */
-}
-
-#aicte {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    /* You may need to adjust the height here to keep it proportional */
-    height: 40px; /* or a custom value */
-    z-index: 1; /* Make sure it's on top of other logos if they overlap */
-}
-
-/* The other logos will retain their positions due to the original flexbox and their placement in the HTML */
 
 /* Fix for content hiding under fixed header */
 #home {
@@ -394,7 +384,7 @@ footer .quick-links ul li a:hover {
   .logo-bar img {
     height: 60px;
   }
-
+  
   .hamburger-menu {
     display: none;
   }
@@ -404,7 +394,7 @@ footer .quick-links ul li a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
-    flex-wrap: wrap; /* Added this to allow for wrapping if screen is too narrow */
+    flex-wrap: wrap;
   }
 
   .nav-links-container {
@@ -421,14 +411,13 @@ footer .quick-links ul li a:hover {
   nav ul {
     flex-direction: row;
     margin-top: 0;
-    gap: 15px; /* Increased the gap for both English and Hindi */
+    gap: 15px;
   }
 
-  /* This fixes the stacking issue for the Hindi links */
   nav ul li a {
-    display: inline-block; /* Changed to inline-block */
-    white-space: nowrap; /* Prevents text from wrapping */
-    padding: 6px 10px; /* Adjusted padding to be uniform */
+    display: inline-block;
+    white-space: nowrap;
+    padding: 6px 10px;
   }
 
   .lang-switch {
