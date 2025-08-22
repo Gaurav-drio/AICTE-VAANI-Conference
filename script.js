@@ -18,11 +18,20 @@ hamburger.addEventListener('click', () => {
     navLinksContainer.classList.toggle('active');
 });
 
+// ⭐ New code to close the menu on link click
+const navLinks = document.querySelectorAll('#nav-links-container a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinksContainer.classList.remove('active');
+    });
+});
+
 // Slideshow
 const slides = [
   "https://res.cloudinary.com/odysseytraveller/image/fetch/f_auto,q_auto,dpr_auto,r_4,w_765,h_612,c_limit/https://cdn.odysseytraveller.com/app/uploads/2020/02/Amber-Fort.jpg",
   "https://images.shiksha.com/mediadata/images/1718622618phpGf6StU.jpeg",
-  "https://thumbs.dreamstime.com/b/group-people-walking-large-building-blue-background-wearing-suits-carrying-briefcases-scene-busy-357965330.jpg"
+  "https://qs-igauge.blr1.cdn.digitaloceanspaces.com/Campus_Poornima%20College%20of%20Engneering.png"
 ];
 let currentSlide = 0;
 let slideshowTimer;
