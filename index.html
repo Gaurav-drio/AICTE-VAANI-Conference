@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AICTE-VAANI Conference</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+</head>
+
+<body>
+  <header>
+    <div class="logo-bar">
+      <div class="logo-group left">
+        <img src="assets/PCE.png" alt="PCE">
+        <img id="naac" src="assets/logo3.png" alt="NAAC">
+      </div>
+      <div class="logo-group center">
+        <img id="aicte" src="assets/AICTE.png" alt="AICTE">
+      </div>
+      <div class="logo-group right">
+        <img src="assets/Anand.png" alt="Anand">
+      </div>
+    </div>
+    <nav>
+      <button class="hamburger-menu" id="hamburger-menu">☰</button>
+      <div class="nav-links-container" id="nav-links-container">
+        <ul>
+          <li><a href="#home"><span class="en">Home</span><span class="hi">मुख पृष्ठ</span></a></li>
+          <li><a href="#about"><span class="en">About</span><span class="hi">हमारे विषर में</span></a></li>
+          <li><a href="#committee"><span class="en">Committee</span><span class="hi">आयोजन समिति</span></a></li>
+          <li><a href="#schedule"><span class="en">Schedule</span><span class="hi">अनुसूची</span></a></li>
+          <li><a href="#contact"><span class="en">Contact</span><span class="hi">संपर्क</span></a></li>
+        </ul>
+        <div class="lang-switch">
+          <button id="lang-en" class="active">English</button>
+          <button id="lang-hi">हिन्दी</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>
+        <span class="en">AICTE-VAANI (Vibrant Advocacy for Advancement and Nurturing of Indian Languages Institution)
+          Conference</span>
+        <span class="hi">एआईसीटीई - वाइब्रेंट एडवोकेसी फॉर एडवांसमेंट एंड न्यूचरिंग ऑफ इंडियन लैंग्वेजेज इंस्टीट्यूशन
+          (VAANI)</span>
+      </h1>
+      <h2><span class="en">Sponsored 3-Days Conference</span><span class="hi">प्रायोजित 3- दिवसीय सम्मेलन</span></h2>
+      <h3><span class="en">on</span><span class="hi">पर</span></h3>
+      <h3><span class="en">“National Conference on Mathematical Biology and Ecology for Sustainable Development”</span>
+        <span class="hi">“ सतत विकास के लिए गणितीय जीव विज्ञान और पारिस्थितिकी पर राष्ट्रीय सम्मेलन ”</span>
+      </h3>
+      <p>
+        <span class="en">27th to 29th November, 2025 • Offline Mode • Jaipur, India</span>
+        <span class="hi">27 से 29 नवंबर, 2025 • ऑफ़लाइन मोड • जयपुर, भारत</span>
+      </p>
+
+      <div class="countdown">
+        <div><span id="days">00</span><label><span class="en">Days</span><span class="hi">दिन</span></label></div>
+        <div><span id="hours">00</span><label><span class="en">Hours</span><span class="hi">घंटे</span></label></div>
+        <div><span id="minutes">00</span><label><span class="en">Minutes</span><span class="hi">मिनट</span></label>
+        </div>
+        <div><span id="seconds">00</span><label><span class="en">Seconds</span><span class="hi">सेकंड</span></label>
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#schedule" class="btn"><span class="en">Register Now</span><span class="hi">अभी पंजीकरण करें</span></a>
+        <a href="#" class="btn"><span class="en">Download Brochure</span><span class="hi">ब्रॉशर डाउनलोड करें</span></a>
+      </div>
+      <p><a href="mailto:vaani.pce@poornima.org">vaani.pce@poornima.org</a> </p>
+    </div> <div class="jointly">
+      <h2><span class="en">Jointly Organised By</span><span class="hi">संयुक्त रूप से आयोजित</span></h2>
+      <p>
+        <span class="en">Poornima College of Engineering<br>ISI-6, RIICO Institutional Area, Sitapura, Jaipur-302022,
+          Rajasthan, India<br><a href="http://www.poornima.org" target="_blank">www.poornima.org</a></span><span
+          class="hi">पूर्णिमा कॉलेज ऑफ इंजीनियरिंग<br>आईएसआई-6, रीको इंस्टीट्यूशनल एरिया, सीतापुरा, जयपुर-302022,
+          राजस्थान, भारत<br><a href="http://www.poornima.org" target="_blank">www.poornima.org</a></span><br>
+        <span class="en">and</span><span class="hi">और</span><br>
+        <span class="en">Anand International College of Engineering<br>Near Kanota, Agra Road, Jaipur-303012, Rajasthan,
+          India<br><a href="http://www.anandice.ac.in" target="_blank">www.anandice.ac.in</a></span><span
+          class="hi">आनंद इंटरनेशनल कॉलेज ऑफ इंजीनियरिंग<br>कनोता के पास, आगरा रोड, जयपुर-303012, राजस्थान, भारत<br><a
+            href="http://www.anandice.ac.in" target="_blank">www.anandice.ac.in</a>
+             </span>
+      </p>
+    </div>
+
+    <div class="slideshow-controls">
+      <button id="prev">⟨</button>
+      <button id="stop">◼</button>
+      <button id="next">⟩</button>
+    </div>
+    <div class="dots"><span></span><span></span><span></span></div>
+
+  </section>
+
+  <section id="about">
+    <h2><span class="en">About</span><span class="hi">हमारे विषर में</span></h2>
+    <div class="about-container">
+      <div class="block light">
+        <h3><span class="en">POORNIMA COLLEGE OF ENGINEERING, JAIPUR</span><span class="hi">पूर्णिमा कॉलेज ऑफ
+            इंजीनियरिंग, जयपुर</span></h3>
+        <p><span class="en">Poornima College of Engineering is the flagship institute of Poornima Group established in
+            2000 to impart practical technical education. In its glorious journey of 25 years, PCE has set benchmarks
+            and reached new heights in engineering education with dedication, perseverance and commitment with around
+            1000 students. 2,500 students studying ten specializations of engineering (CSE, CSE (AI), AI & DS, CSE
+            (Cyber Security, CSE (Regional Language), ECE, EE, ME, Civil and IT). With over 3.5 lakh sq. ft. of built-up
+            area, highly qualified faculty, state-of-the-art infrastructure, good placements and industry-based
+            curriculum, PCE is moving ahead of others with tremendous growth since its inception. PCE is leading its
+            outstanding journey with the motto of 'Success is not a destination, it's a journey'. Poornima College of
+            Engineering, Jaipur has been ranked 2nd in the QIV ranking of Rajasthan Technical University, Kota since
+            2017. PCE is accredited with the prestigious A+ grade by the National Assessment and Accreditation Council
+            (NAAC).</span><span class="hi">पूर्णिमा कॉलेज ऑफ इंजीनियरिंग, पूर्णिमा ग्रुप का अग्रणी संस्थान है जिसकी
+            स्थापना 2000 में व्यावहारिक तकनीकी शिक्षा प्रदान करने के लिए की गई थी। 25 वर्षों की अपनी शानदार यात्रा में,
+            PCE ने लगभग 1000 छात्रों के साथ समर्पण, दृढ़ता और समर्पण के साथ इंजीनियरिंग शिक्षा में मानक स्थापित किए हैं
+            और नए शिखर पर पहुँचे हैं। इंजीनियरिंग के दस विशेषज्ञताओं (सीएसई, सीएसई (एआई), एआई और डीएस, सीएसई (साइबर
+            सुरक्षा, सीएसई (क्षेत्रीय भाषा), ईसीई, ईई, एमई, सिविल और आईटी) का अध्ययन करने वाले 2,500 छात्र। 3.5 लाख वर्ग
+            फुट से अधिक निर्मित क्षेत्र, उच्च योग्य संकाय, अत्याधुनिक बुनियादी ढांचे, अच्छे प्लेसमेंट और उद्योग-आधारित
+            पाठ्यक्रम के साथ, पीसीई अपनी स्थापना के बाद से जबरदस्त विकास के साथ दूसरों से आगे बढ़ रहा है। पीसीई 'सफलता
+            एक मंजिल नहीं है, यह एक यात्रा है' के आदर्श वाक्य के साथ अपनी उत्कृष्ट यात्रा का नेतृत्व कर रहा है। पूर्णिमा
+            कॉलेज ऑफ इंजीनियरिंग, जयपुर को 2017 से राजस्थान तकनीकी विश्वविद्यालय, कोटा की QIV रैंकिंग में दूसरा स्थान
+            दिया गया है। पीसीई को राष्ट्रीय मूल्यांकन और प्रत्यायन परिषद (NAAC) द्वारा प्रतिष्ठित A+ ग्रेड से मान्यता
+            प्राप्त है।</span></p>
+      </div>
+      <div class="block">
+        <h3><span class="en">ANAND INTERNATIONAL COLLEGE OF ENGINEERING, JAIPUR</span><span class="hi">आनंद इंटरनेशनल
+            कॉलेज ऑफ इंजीनियरिंग, जयपुर</span></h3>
+        <p><span class="en">Anand International College of Engineering, approved by AICTE and affiliated to RTU, Kota
+            was established at Jaipur in year 2010. Since its inception, the institute persists its credentials of
+            joyous teaching-learning environs of global standards and offers B. Tech. degree program in five engineering
+            disciplines i.e. Civil, Computer Science, Computer Science(AI), Computer Science(Data Science), Electrical
+            and Mechanical Engineering. The institute nurtures intellectually inspiring Academic Environment at
+            lush-green landscaped campus with state-of-the-art infrastructure. Anand-ICE has been distinguished for its
+            qualitative teaching-learning processes that place it among the best emerging engineering institutions of
+            India (Times of India). The institute extends strategic partnerships with various renowned foreign
+            universities for exposing students through Abroad Training Program. The institute also encourages the
+            students to incubate their innovative concepts in order to foster new ventures.</span><span
+            class="hi">एआईसीटीई द्वारा अनुमोदित और आरटीयू, कोटा से संबद्ध आनंद इंटरनेशनल कॉलेज ऑफ इंजीनियरिंग की स्थापना
+            वर्ष 2010 में जयपुर में हुई थी। अपनी स्थापना के बाद से, संस्थान ने वैश्विक मानकों के आनंददायक शिक्षण-अधिगम
+            वातावरण की अपनी साख कायम रखी है और पांच इंजीनियरिंग विषयों यानी सिविल, कंप्यूटर विज्ञान, कंप्यूटर विज्ञान
+            (एआई), कंप्यूटर विज्ञान (डेटा विज्ञान), इलेक्ट्रिकल और मैकेनिकल इंजीनियरिंग में बी. टेक. डिग्री कार्यक्रम
+            प्रदान करता है। संस्थान अत्याधुनिक बुनियादी ढांचे के साथ हरे-भरे परिसर में बौद्धिक रूप से प्रेरक शैक्षणिक
+            वातावरण का पोषण करता है। आनंद-आईसीई अपनी गुणात्मक शिक्षण-अधिगम प्रक्रियाओं के लिए प्रतिष्ठित है जो इसे भारत
+            के सर्वश्रेष्ठ उभरते इंजीनियरिंग संस्थानों में से एक बनाती है (टाइम्स ऑफ इंडिया)। संस्थान विदेश प्रशिक्षण
+            कार्यक्रम के माध्यम से छात्रों को अवगत कराने के लिए विभिन्न प्रतिष्ठित विदेशी विश्वविद्यालयों के साथ रणनीतिक
+            साझेदारी करता है। संस्थान छात्रों को नए उद्यमों को बढ़ावा देने के लिए अपनी नवीन अवधारणाओं को विकसित करने के
+            लिए भी प्रोत्साहित करता है।</span></p>
+      </div>
+      <div class="block light">
+        <h3><span class="en">ABOUT VANNI PROGRAM</span><span class="hi">वाणी कार्यक्रम के बारे में</span></h3>
+        <p><span class="en">To promote high standards in technical education in Indian languages by providing
+            opportunities to academicians and working professionals by providing a platform to share their knowledge,
+            experience, innovations and inventions in 16 emerging areas. To create knowledge base by organizing a
+            conference/seminar/workshop in the above mentioned areas in 22 Indian languages.</span><span class="hi">16
+            उभरते क्षेत्रों में अपने ज्ञान, अनुभव, नवाचारों और आविष्कारों को साझा करने के लिए एक मंच प्रदान करके
+            शिक्षाविदों और कार्यरत पेशेवरों को अवसर प्रदान करके भारतीय भाषाओं में तकनीकी शिक्षा में उच्च मानकों को
+            बढ़ावा देना। 22 भारतीय भाषाओं में उपर्युक्त क्षेत्रों में एक सम्मेलन / संगोष्ठी / कार्यशाला आयोजित करके
+            ज्ञान का आधार तैयार करना।</span></p>
+        <p><span class="en">Expected Outcomes:</span><span class="hi">अपेक्षित परिणाम:</span></p>
+        <ul>
+          <li><span class="en">Publication of research papers in Indian languages.</span><span class="hi">भारतीय भाषाओं
+              में शोध पत्रों का प्रकाशन।</span></li>
+          <li><span class="en">To explore possibilities of creating roadmap for upcoming projects and opening new
+              avenues for research.</span><span class="hi">आगामी परियोजनाओं के लिए रोडमैप बनाने और शोध के लिए नए रास्ते
+              खोलने की संभावनाओं पर विचार।</span></li>
+          <li><span class="en">Content creation in Indian languages.</span><span class="hi">भारतीय भाषाओं में सामग्री
+              निर्माण।</span></li>
+          <li><span class="en">Collaboration between institutions and industry.</span><span class="hi">संस्थानों और
+              उद्योग के बीच सहयोग।</span></li>
+          <li><span class="en">To create a knowledge base in Indian languages and encourage creation of a repository of
+              latest technical knowledge incorporating latest developments in Indian languages.</span><span
+              class="hi">भारतीय भाषाओं में ज्ञान का आधार बनाना और भारतीय भाषाओं में नवीनतम विकास को शामिल करते हुए
+              नवीनतम तकनीकी ज्ञान के खजाने के निर्माण को प्रोत्साहित करना।</span></li>
+          <li><span class="en">To promote Indian languages in technical education.</span><span class="hi">तकनीकी शिक्षा
+              में भारतीय भाषाओं को बढ़ावा देना।</span></li>
+        </ul>
+      </div>
+      <div class="block">
+        <h3><span class="en">ABOUT CONFERENCE</span><span class="hi">सम्मेलन के बारे में</span></h3>
+        <p><span class="en">Poornima College of Engineering, Jaipur is pleased to welcome you to the International
+            Conference on Mathematical Biology and Ecology for Sustainable Development (ICMBESD-25) to be held on 3-4
+            October 2025 in Jaipur, India. ICMBESD-25 is designed to equip participants with a comprehensive knowledge
+            of mathematical biology and ecology for sustainable development. The program aims to bridge the gap between
+            theoretical understanding and practical application, focusing on the latest advances and innovations in
+            mathematical biology and ecology for sustainable development. The conference is being organized under the
+            AICTE-VANI scheme, which aims to provide financial assistance to AICTE-approved institutions for organizing
+            events such as conferences, seminars and workshops in emerging technical areas in 22 regional languages. The
+            scheme reflects AICTE's commitment to promote high standards in technical education in regional languages.
+            By providing opportunities for academics and working professionals to share their knowledge, experience,
+            innovations and inventions in 16 emerging areas, AICTE is encouraging institutions to build a knowledge base
+            through events organised in regional languages. The conference serves as a valuable platform for individuals
+            to contribute to the advancement of technical education in regional languages by participating in
+            discussions and knowledge-sharing activities.</span><span class="hi">पूर्णिमा कॉलेज ऑफ इंजीनियरिंग, जयपुर
+            3-4 अक्टूबर 2025 को जयपुर, भारत में आयोजित होने वाले गणितीय जीव विज्ञान और सतत विकास के लिए पारिस्थितिकी पर
+            अंतर्राष्ट्रीय सम्मेलन (ICMBESD-25) में आपका स्वागत करते हुए प्रसन्न है। ICMBESD-25 प्रतिभागियों को सतत
+            विकास के लिए गणितीय जीव विज्ञान और पारिस्थितिकी के व्यापक ज्ञान से लैस करने के लिए डिज़ाइन किया गया है। इस
+            कार्यक्रम का उद्देश्य सैद्धांतिक समझ और व्यावहारिक अनुप्रयोग के बीच की खाई को पाटना है, जो सतत विकास के लिए
+            गणितीय जीव विज्ञान और पारिस्थितिकी में नवीनतम प्रगति और नवाचारों पर ध्यान केंद्रित करता है। यह सम्मेलन
+            एआईसीटीई-वाणी योजना के तहत आयोजित किया जा रहा है, जिसका उद्देश्य 22 क्षेत्रीय भाषाओं में उभरते तकनीकी
+            क्षेत्रों में सम्मेलन, सेमिनार और कार्यशालाओं जैसे आयोजनों के लिए एआईसीटीई-अनुमोदित संस्थानों को वित्तीय
+            सहायता प्रदान करना है। यह योजना क्षेत्रीय भाषाओं में तकनीकी शिक्षा में उच्च मानकों को बढ़ावा देने के लिए
+            एआईसीटीई की प्रतिबद्धता को दर्शाती है। शिक्षाविदों और कार्यरत पेशेवरों को 16 उभरते क्षेत्रों में अपने ज्ञान,
+            अनुभव, नवाचारों और आविष्कारों को साझा करने के अवसर प्रदान करके, एआईसीटीई संस्थानों को क्षेत्रीय भाषाओं में
+            आयोजित कार्यक्रमों के माध्यम से ज्ञान का आधार बनाने के लिए प्रोत्साहित कर रहा है। यह सम्मेलन व्यक्तियों के
+            लिए चर्चाओं और ज्ञान-साझाकरण गतिविधियों में भाग लेकर क्षेत्रीय भाषाओं में तकनीकी शिक्षा की उन्नति में योगदान
+            देने के लिए एक मूल्यवान मंच के रूप में कार्य करता है।</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="committee">
+    <h2><span class="en">Organizing Committee</span><span class="hi">आयोजन समिति</span></h2>
+    <div class="committee-grid">
+      <div class="committee-card">
+        <h4><span class="en">Patrons</span><span class="hi">संरक्षक</span></h4>
+        <p><span class="en">Ar. Rahul Singhi<br>Director, Poornima Group, Jaipur, India<br><br>Dr. Mahesh
+            Bundele<br>Principal & Director, PCE, Jaipur, India</span><span class="hi">श्री राहुल सिंघी<br>निदेशक,
+            पूर्णिमा ग्रुप, जयपुर, भारत<br><br>डॉ. महेश बुंदेले<br>प्रिंसिपल एवं निदेशक, पीसीई, जयपुर, भारत</span></p>
+      </div>
+      <div class="committee-card">
+        <h4><span class="en">Program Chairs</span><span class="hi">कार्यक्रम अध्यक्ष</span></h4>
+        <p><span class="en">Dr. Pankaj Dhemla<br>Professor & Vice Principal, PCE, Jaipur, India<br><br>Dr. Gautam
+            Singh<br>Registrar, Poornima College of Engineering, Jaipur, India</span><span class="hi">डॉ. पंकज
+            ढेमला<br>प्रोफेसर एवं वाइस प्रिंसिपल, पीसीई, जयपुर, भारत<br><br>डॉ. गौतम सिंह<br>रजिस्ट्रार, पूर्णिमा कॉलेज
+            ऑफ इंजीनियरिंग, जयपुर, भारत</span></p>
+      </div>
+      <div class="committee-card">
+        <h4><span class="en">Coordinator</span><span class="hi">समन्वयक</span></h4>
+        <p><span class="en">Dr.Shilpi Jain<br>Professor, PCE, Jaipur,
+            India<br>Email-shilpi.jain@poornima.org<br>+91-9928279174</span><span class="hi">डॉ. शिल्पी जैन<br>प्रोफेसर,
+            पीसीई, जयपुर, भारत<br>ईमेल-shilpi.jain@poornima.org<br>+91-9928279174</span></p>
+      </div>
+      <div class="committee-card">
+        <h4><span class="en">Co-Coordinator</span><span class="hi">सह-समन्वयक</span></h4>
+        <p><span class="en">Dr. Praveen Agarwal<br>Professor, Anand-ICE, Jaipur, India<br>E-mail:
+            praveen.agarwal@anandice.ac.in<br>+91-8387894656</span><span class="hi">डॉ. प्रवीण अग्रवाल<br>प्रोफेसर,
+            आनंद-आईसीई, जयपुर, भारत<br>ईमेल: praveen.agarwal@anandice.ac.in<br>+91-8387894656</span></p>
+      </div>
+      <div class="committee-card">
+        <h4><span class="en">Organizing Committee</span><span class="hi">आयोजन समिति</span></h4>
+        <p>
+          <span class="en">
+            Dr. Nikita Jain, CSE, PCE, Jaipur.<br>
+            Mr. Shubham Patel, CSE, PCE, Jaipur.<br>
+            Mr. Rohit Chhabra, CSE, PCE, Jaipur.<br>
+            Dr. Amol Saxena, Head-ADC, PCE, Jaipur.<br>
+            Dr. Gajendra S. Rajawat , Head-IT, PCE, Jaipur.<br>
+            Mr. Manish Dubey, CSE ,PCE, Jaipur.<br>
+            Dr. Prakash Singh, SBAS, Anand-ICE
+          </span>
+          <span class="hi">
+            डॉ. निकिता जैन, सीएसई, पीसीई, जयपुर <br> 
+            श्री शुब्हम पटेल, सीएसई, पीसीई, जयपुर <br> 
+            श्री रोहित छाबड़ा, सीएसई, पीसीई, जयपुर <br>
+            डॉ. अमोल सक्सेना, प्रमुख-एडीसी, पीसीई, जयपुर<br>
+            डॉ. गजेंद्र एस. राजावत, प्रमुख-आईटी, पीसीई, जयपुर<br>
+            श्री मनीष दुबे, सीएसई, पीसीई, जयपुर<br>
+            डॉ. प्रकाश सिंह, एसबीएएस, आनंद-आईसीई
+          </span>
+        </p>
+      </div>
+      <div class="committee-card">
+        <h4><span class="en">Web Developers</span><span class="hi">वेब डेवलपर्स</span></h4>
+        <p><span class="en">Mr. Ishant Goyal<br>Student CSE, PCE, Jaipur.<br><br>Mr. Gaurav Sharma<br>Student CSE, PCE,
+            Jaipur.</span><span class="hi">श्री इशांत गोयल<br>छात्र सीएसई, पीसीई, जयपुर<br><br>श्री गौरव शर्मा<br>छात्र
+            सीएसई, पीसीई, जयपुर</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <h2><span class="en">Schedule & Participation</span><span class="hi">अनुसूची एवं सहभागिता</span></h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header tab-trigger" data-tab="schedule-content">
+          <span class="en">Schedule OF Conference</span>
+          <span class="hi">सम्मेलन की अनुसूची</span>
+        </div>
+        <div class="accordion-body">
+          </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header tab-trigger" data-tab="speakers-content">
+          <span class="en">Speakers</span>
+          <span class="hi">वक्ता</span>
+        </div>
+        <div class="accordion-body">
+           </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header tab-trigger" data-tab="call-for-papers-content">
+          <span class="en">Call for Papers</span>
+          <span class="hi">कॉल फ़ॉर पेपर्स</span>
+        </div>
+        <div class="accordion-body">
+           </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header tab-trigger" data-tab="publication-content">
+          <span class="en">Publication</span>
+          <span class="hi">प्रकाशन</span>
+        </div>
+        <div class="accordion-body">
+           </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header tab-trigger" data-tab="registration-content">
+          <span class="en">Registration</span>
+          <span class="hi">पंजीकरण</span>
+        </div>
+        <div class="accordion-body">
+           </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header tab-trigger" data-tab="paper-submission-content">
+          <span class="en">Paper Submission and Guidelines</span>
+          <span class="hi">पेपर प्रस्तुतीकरण और दिशानिर्देश</span>
+        </div>
+        <div class="accordion-body">
+           </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" data-tab="none">
+          <span class="en">Accommodation</span>
+          <span class="hi">आवास</span>
+        </div>
+        <div class="accordion-body">
+          <p>
+            <span class="en">To be announced soon.</span>
+            <span class="hi">जल्द ही घोषित किया जाएगा।</span>
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" data-tab="none">
+          <span class="en">Venue</span>
+          <span class="hi">कार्यक्रम का स्थान</span>
+        </div>
+        <div class="accordion-body">
+          <p>
+            <span class="en">Poornima College of Engineering.<br>ISI-6, RIICO Institutional Area,
+              Sitapura.<br>Jaipur-302022, Rajasthan, India.<br>www.poornima.org</span>
+            <span class="hi">पूर्णिमा इंजीनियरिंग कॉलेज<br>आईएसआई-6, रीको इंस्टीट्यूशनल एरिया, सीतापुरा<br>जयपुर-302022, राजस्थान,
+              भारत<br>www.poornima.org</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2><span class="en">Contact</span><span class="hi">संपर्क</span></h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h4><span class="en">Coordinator</span><span class="hi">समन्वयक</span></h4>
+        <p><span class="en">Dr.Shilpi Jain<br>Professor, PCE, Jaipur, India<br>Email: shilpi.jain@poornima.org<br>(M):
+            +91-9928279174</span>
+          <span class="hi">डॉ. शिल्पी जैन<br>प्रोफ़ेसर, पीसीई, जयपुर, भारत<br>ईमेल:
+            shilpi.jain@poornima.org<br>(मोबाइल): +91-9928279174</span>
+        </p>
+      </div>
+      <div class="contact-card">
+        <h4><span class="en">Co-Coordinator</span><span class="hi">सह-समन्वयक</span></h4>
+        <p><span class="en">Dr. Praveen Agarwal<br>Professor, Anand-ICE, Jaipur, India<br>E-mail:
+            praveen.agarwal@anandice.ac.in<br>+91-8387894656</span>
+          <span class="hi">डॉ. प्रवीण अग्रवाल<br>प्रोफ़ेसर, आनंद-आईसीई, जयपुर, भारत<br>ईमेल:
+            praveen.agarwal@anandice.ac.in<br>(मोबाइल): +91-8387894656</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><span class="en">© 2025 AICTE-VAANI. All rights reserved.</span>
+      <span class="hi">© 2025 एआईसीटीई-वाणी. सर्वाधिकार सुरक्षित।</span>
+    </p>
+    <div class="quick-links">
+      <h3><span class="en">Quick Links</span><span class="hi">त्वरित संपर्क</span></h3>
+      <ul>
+        <li><a href="#" target="_blank"><span class="en">Conference Brochure</span><span class="hi">सम्मेलन
+              विवरणिका</span></a></li>
+        <li><a href="#" target="_blank"><span class="en">Conference Schedule</span><span class="hi">सम्मेलन
+              अनुसूची</span></a></li>
+        <li><a href="#" target="_blank"><span class="en">AICTE Approval Letter</span><span class="hi">एआईसीटीई अनुमोदन
+              पत्र</span></a></li>
+        <li><a href="#" target="_blank"><span class="en">VAANI Scheme Document</span><span class="hi">वाणी योजना
+              दस्तावेज़</span></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div id="popup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3 class="modal-title">
+        <span class="en modal-en-title"></span>
+        <span class="hi modal-hi-title"></span>
+      </h3>
+      <div class="modal-body">
+        </div>
+    </div>
+  </div>
+  
+  <div class="hidden-content">
+    
+    <div id="schedule-content">
+      <h4 class="hidden-tab-title">
+        <span class="en">Schedule OF Conference</span>
+        <span class="hi">सम्मेलन की अनुसूची</span>
+      </h4>
+      <table>
+        <thead>
+          <tr>
+            <th><span class="en">Date</span><span class="hi">दिनांक</span></th>
+            <th><span class="en">Day</span><span class="hi">दिन</span></th>
+            <th><span class="en">Time</span><span class="hi">समय</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>27/11/2025</td>
+            <td><span class="en">Thursday</span><span class="hi">गुरुवार</span></td>
+            <td>9:00 AM to 4:00 PM</td>
+          </tr>
+          <tr>
+            <td>28/11/2025</td>
+            <td><span class="en">Friday</span><span class="hi">शुक्रवार</span></td>
+            <td>9:00 AM to 4:00 PM</td>
+          </tr>
+          <tr>
+            <td>29/11/2025</td>
+            <td><span class="en">Saturday</span><span class="hi">शनिवार</span></td>
+            <td>9:00 AM to 4:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin-top: 15px;">***<span class="en">Details Schedule will announced soon</span><span class="hi">विस्तृत अनुसूची जल्द ही घोषित की जाएगी</span>***</p>
+    </div>
+
+    <div id="speakers-content">
+      <h4 class="hidden-tab-title">
+        <span class="en">Speakers</span>
+        <span class="hi">वक्ता</span>
+      </h4>
+      <div class="speaker-list">
+        <div class="speaker-item">
+          <p>
+            <span class="en">Dr. Arun Kant Singh</span><span class="hi">डॉ. अरुण कांत सिंह</span>,<br>
+            <span class="en">Biomedical Metrology Section</span><span class="hi">बायोमेडिकल मेट्रोलॉजी अनुभाग</span>,<br>
+            <span class="en">Environmental Sciences and Biomedical Metrology Division</span><span class="hi">पर्यावरण विज्ञान और बायोमेडिकल मेट्रोलॉजी प्रभाग</span>,<br>
+            <span class="en">CSIR-National Physical Laboratory, Dr. K. S. Krishnan Marg, New Delhi-110012</span><span class="hi">सीएसआईआर-राष्ट्रीय भौतिक प्रयोगशाला, डॉ. के. एस. कृष्णन मार्ग, नई दिल्ली-110012</span>
+          </p>
+        </div>
+        <div class="speaker-item">
+          <p>
+            <span class="en">Dr. Ritesh Kumar Agarwal</span><span class="hi">डॉ. रितेश कुमार अग्रवाल</span>,<br>
+            <span class="en">Dr. Ritesh Orthopaedic And Trauma Centre, Jaipur</span><span class="hi">डॉ. रितेश ऑर्थोपेडिक और ट्रॉमा सेंटर, जयपुर</span>
+          </p>
+        </div>
+        <div class="speaker-item">
+          <p>
+            <span class="en">Prof. Praveen Agarwal</span><span class="hi">प्रो. प्रवीण अग्रवाल</span>,<br>
+            <span class="en">Anand International College of Engineering, Jaipur</span><span class="hi">आनंद इंटरनेशनल कॉलेज ऑफ इंजीनियरिंग, जयपुर</span>
+          </p>
+        </div>
+        <div class="speaker-item">
+          <p>
+            <span class="en">Dr. Ram Singh</span><span class="hi">डॉ. राम सिंह</span>,<br>
+            <span class="en">BGSB University, J&K</span><span class="hi">बीजीएसबी विश्वविद्यालय, जम्मू और कश्मीर</span>
+          </p>
+        </div>
+        <div class="speaker-item">
+          <p>
+            <span class="en">Dr. Ritu Agarwal</span><span class="hi">डॉ. रितु अग्रवाल</span>,<br>
+            <span class="en">Malaviya National Institute of Technology Jaipur</span><span class="hi">मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान जयपुर</span>
+          </p>
+        </div>
+        <div class="speaker-item">
+          <p>
+            <span class="en">Dr. Mehar Chand</span><span class="hi">डॉ. मेहर चंद</span>,<br>
+            <span class="en">Baba Farid College, Bathinda</span><span class="hi">बाबा फरीद कॉलेज, बठिंडा</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="call-for-papers-content">
+      <h4 class="hidden-tab-title">
+        <span class="en">Call for Papers</span>
+        <span class="hi">कॉल फ़ॉर पेपर्स</span>
+      </h4>
+      <p style="text-align: justify;"><span class="en">This conference aims to bring together cutting-edge research at the interface of mathematics, biology, ecology, and sustainability science.</span><span class="hi">इस सम्मेलन का उद्देश्य गणित, जीव विज्ञान, पारिस्थितिकी और स्थिरता विज्ञान के अंतरापृष्ठ पर अत्याधुनिक अनुसंधान को एक साथ लाना है।</span></p>
+      <p style="text-align: justify;"><span class="en">We invite contributions that highlight how mathematical methods can support the United Nations Sustainable Development Goals (SDGs), particularly those linked to life on land, life below water, health and well-being, and climate action.</span><span class="hi">हम ऐसे योगदानों को आमंत्रित करते हैं जो इस बात पर प्रकाश डालते हैं कि गणितीय विधियाँ संयुक्त राष्ट्र सतत विकास लक्ष्यों (एसडीजी), विशेष रूप से भूमि पर जीवन, जल के नीचे जीवन, स्वास्थ्य और कल्याण, और जलवायु कार्रवाई से जुड़े लक्ष्यों का समर्थन कैसे कर सकती हैं।</span></p>
+      
+      <h5><span class="en">Topics of Interest (but not limited to):</span><span class="hi">रुचि के विषय (लेकिन इन तक सीमित नहीं):</span></h5>
+      <ul class="topic-list">
+        <li><span class="en">Mathematical models of population dynamics, species interactions, and ecosystem resilience.</span><span class="hi">जनसंख्या गतिशीलता, प्रजातियों की परस्पर क्रिया और पारिस्थितिकी तंत्र के लचीलेपन के गणितीय मॉडल।</span></li>
+        <li><span class="en">Epidemiological modeling of emerging and re-emerging diseases.</span><span class="hi">उभरती और फिर से उभरती बीमारियों का महामारी विज्ञान मॉडलिंग।</span></li>
+        <li><span class="en">Spatial and temporal models of biodiversity conservation.</span><span class="hi">जैव विविधता संरक्षण के स्थानिक और लौकिक मॉडल।</span></li>
+        <li><span class="en">Climate–ecosystem interactions and predictive modeling.</span><span class="hi">जलवायु-पारिस्थितिकी तंत्र की परस्पर क्रिया और भविष्य कहनेवाला मॉडलिंग।</span></li>
+        <li><span class="en">Mathematical approaches to sustainable agriculture, fisheries, and forestry.</span><span class="hi">टिकाऊ कृषि, मत्स्य पालन और वानिकी के लिए गणितीय दृष्टिकोण।</span></li>
+        <li><span class="en">Network and systems biology approaches to ecological and environmental systems.</span><span class="hi">पारिस्थितिक और पर्यावरणीय प्रणालियों के लिए नेटवर्क और सिस्टम जीव विज्ञान दृष्टिकोण।</span></li>
+        <li><span class="en">Applications of AI, machine learning, and data-driven modeling in ecology and sustainability.</span><span class="hi">पारिस्थितिकी और स्थिरता में एआई, मशीन लर्निंग और डेटा-संचालित मॉडलिंग के अनुप्रयोग।</span></li>
+        <li><span class="en">Optimal control, game theory, and decision-making models for resource management.</span><span class="hi">संसाधन प्रबंधन के लिए इष्टतम नियंत्रण, गेम थ्योरी और निर्णय लेने के मॉडल।</span></li>
+        <li><span class="en">Eco-evolutionary dynamics and adaptation in changing environments.</span><span class="hi">बदलते वातावरण में पर्यावरण-विकासवादी गतिशीलता और अनुकूलन।</span></li>
+        <li><span class="en">Interdisciplinary approaches linking mathematical biology with policy, economics, and sustainability planning.</span><span class="hi">गणितीय जीव विज्ञान को नीति, अर्थशास्त्र और स्थिरता योजना से जोड़ने वाले अंतःविषय दृष्टिकोण।</span></li>
+      </ul>
+    </div>
+
+    <div id="publication-content">
+      <h4 class="hidden-tab-title">
+        <span class="en">Publication</span>
+        <span class="hi">प्रकाशन</span>
+      </h4>
+      <ul class="publication-list">
+        <li>
+          <p style="text-align: justify;"><span class="en">All Accepted papers will be published in the **Conference Proceedings with an ISBN**.(NO APC)</span><span class="hi">सभी स्वीकृत शोध पत्र **ISBN के साथ सम्मेलन कार्यवाहियों** में प्रकाशित किए जाएंगे। (कोई एपीसी नहीं)</span></p>
+        </li>
+        <li>
+          <p style="text-align: justify;">
+            <span class="en">Selected high-quality papers will be considered in the Special Issue on **“Mathematical Biology and Ecology for Sustainable Development”** in the **SCOPUS-indexed, Q-3 Journal-Boletim da Sociedade Paranaense de Matemática** - 
+              <a href="https://shorturl.at/OslhN" target="_blank">https://shorturl.at/OslhN</a>
+            </span>
+            <span class="hi">
+              चयनित उच्च-गुणवत्ता वाले शोध पत्रों को **SCOPUS-अनुक्रमित, Q-3 जर्नल-बोलेटिम दा सोसाइडेडे परनाएंसे डी Matemática** में **"सतत विकास के लिए गणितीय जीव विज्ञान और पारिस्थितिकी"** पर विशेष अंक में विचार किया जाएगा -
+              <a href="https://shorturl.at/OslhN" target="_blank">https://shorturl.at/OslhN</a>
+            </span>
+          </p>
+        </li>
+      </ul>
+      <blockquote style="margin-top: 20px;">
+        <span class="en">**Note:** Every accepted paper will pay a **$100 donation** to the Journal.</span>
+        <span class="hi">**नोट:** प्रत्येक स्वीकृत शोध पत्र जर्नल को **$100 का दान** देगा।</span>
+      </blockquote>
+    </div>
+
+    <div id="registration-content">
+      <h4 class="hidden-tab-title">
+        <span class="en">Registration</span>
+        <span class="hi">पंजीकरण</span>
+      </h4>
+      <p class="fee-info">
+        <span class="en">**Registration Fee:** Nil (Open to faculty members, research scholars, postgraduate students, and industry professionals from AICTE-approved institutions).</span>
+        <span class="hi">**पंजीकरण शुल्क:** शून्य (एआईसीटीई-अनुमोदित संस्थानों के संकाय सदस्यों, शोधार्थियों, स्नातकोत्तर छात्रों और उद्योग पेशेवरों के लिए खुला)।</span>
+      </p>
+      
+      <h5><span class="en">Steps to Register:</span><span class="hi">पंजीकरण के चरण:</span></h5>
+      <ol class="registration-steps">
+        <li>
+          <span class="en">Visit: <a href="https://atalacademy.aicte-india.org/login" target="_blank">https://atalacademy.aicte-india.org/login</a></span>
+          <span class="hi">यहां जाएं: <a href="https://atalacademy.aicte-india.org/login" target="_blank">https://atalacademy.aicte-india.org/login</a></span>
+        </li>
+        <li>
+          <span class="en">Click: FDPs → VAANI → November → All → Face to Face</span>
+          <span class="hi">क्लिक करें: एफडीपी → वाणी → नवंबर → सभी → फेस टू फेस</span>
+        </li>
+        <li>
+          <span class="en">Search using **FDP No:** **2063456572** to find the conference</span>
+          <span class="hi">सम्मेलन खोजने के लिए **एफडीपी संख्या:** **2063456572** का उपयोग करके खोजें</span>
+        </li>
+        <li>
+          <span class="en">Upload NOC (Format available at: <a href="https://shorturl.at/5iyQZ" target="_blank">https://shorturl.at/5iyQZ</a>) and confirm registration</span>
+          <span class="hi">एनओसी अपलोड करें (प्रारूप यहां उपलब्ध है: <a href="https://shorturl.at/5iyQZ" target="_blank">https://shorturl.at/5iyQZ</a>) और पंजीकरण की पुष्टि करें</span>
+        </li>
+      </ol>
+    </div>
+
+    <div id="paper-submission-content">
+      <h4 class="hidden-tab-title">
+        <span class="en">Paper Submission and Guidelines</span>
+        <span class="hi">पेपर प्रस्तुतीकरण और दिशानिर्देश</span>
+      </h4>
+      <p style="text-align: justify;"><span class="en">All the papers submit by using attached format and via below link:</span><span class="hi">सभी शोध पत्र संलग्न प्रारूप का उपयोग करके और नीचे दिए गए लिंक के माध्यम से जमा करें:</span></p>
+      <ul class="submission-links">
+        <li>
+          <span class="en">**Paper Format Template:** <a href="https://shorturl.at/kNl7q" target="_blank">https://shorturl.at/kNl7q</a></span>
+          <span class="hi">**पेपर प्रारूप टेम्पलेट:** <a href="https://shorturl.at/kNl7q" target="_blank">https://shorturl.at/kNl7q</a></span>
+        </li>
+        <li>
+          <span class="en">**Submission Link:** <a href="https://shorturl.at/VKzUT" target="_blank">https://shorturl.at/VKzUT</a></span>
+          <span class="hi">**प्रस्तुति लिंक:** <a href="https://shorturl.at/VKzUT" target="_blank">https://shorturl.at/VKzUT</a></span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

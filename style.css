@@ -1,0 +1,690 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f9f9f9;
+}
+
+/* -------------------- General & Mobile-First Styles -------------------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #004080;
+  color: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo-bar {
+  display: flex;
+  justify-content: space-between; /* Keeps the groups at the edges */
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.logo-bar img {
+  height: 40px; /* Uniform height for all logos on mobile */
+  width: auto;
+}
+
+/* This is the key change to align the AICTE logo in the middle.
+   It creates a 3-column-like layout where the center column's width is flexible. */
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the logos within each group */
+}
+
+/* This will grow and push the other content to the sides, naturally centering the middle group. */
+.logo-group.left {
+    flex-grow: 1;
+}
+
+.logo-group.center {
+    justify-content: center;
+}
+
+.logo-group.right {
+    justify-content: flex-end; /* Pushes the logo to the right side of its container */
+    flex-grow: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.hamburger-menu {
+  display: block;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.nav-links-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #004080;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-links-container.active {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #004080;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 10px;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.lang-switch {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.lang-switch button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  margin: 0 5px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.lang-switch button.active {
+  background: #fff;
+  color: #004080;
+}
+
+/* Sections */
+section {
+  padding: 80px 15px;
+  min-height: 100vh;
+}
+
+/* Fix for content hiding under fixed header */
+#home {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+  text-align: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  min-height: auto; /* Allow home section to shrink to fit content */
+}
+/* Reduce padding on contact section */
+#contact { 
+  background: #fff; 
+  padding: 50px 15px 30px; /* Reduced bottom padding */
+}
+
+#about { background: #fff; }
+#about p { text-align: justify; }
+#about li { text-align: justify; }
+#committee { background: #f0f4ff; }
+#schedule { background: #eaf6ff; }
+
+
+/* Hero */
+.hero-content {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 100%;
+    /* Added position:relative so slideshow controls are positioned relative to this white box */
+    position: relative; 
+    margin-bottom: 20px; /* Separates white box from jointly section */
+}
+
+.hero h1 {
+  font-size: 1em; /* Reduced font size for mobile */
+  margin-bottom: 8px;
+}
+.hero h2 {
+    font-size: 1.2em;
+    margin-bottom: 4px;
+}
+.hero h3 {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+.hero p {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.countdown div {
+  background: rgba(0,0,0,0.4);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px;
+  background: #0066cc;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+  width: 100%;
+  max-width: 250px;
+}
+.btn:hover { background: #004080; }
+
+/* Slideshow controls - Now positioned relative to .hero-content */
+/* Slideshow controls - Now positioned outside the white box and after jointly section */
+.slideshow-controls {
+  position: absolute;
+  /* Adjust this value based on visual need. -10px pulls it up over the jointly text */
+  bottom: -10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: auto;
+  z-index: 5; 
+}
+/* No change to button styling */
+.slideshow-controls button {
+  background: #0066cc; 
+  border: 2px solid #fff;
+  color: white;
+  font-size: 18px;
+  padding: 6px 10px;
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.slideshow-controls button:hover {
+  background: #004080;
+}
+
+.dots {
+  position: absolute;
+  /* Positioning the dots correctly relative to the new button position */
+  bottom: 25px;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  width: 100%;
+}
+.dots span {
+  height: 10px;
+  width: 10px;
+}
+
+.jointly { margin-top: 30px; }
+.jointly p { font-size: 0.9em; }
+
+/* Centered headings */
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.block {
+    background: #eaf6ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+.block.light {
+    background: #f0f4ff;
+}
+.block h3 {
+    margin-bottom: 8px;
+    font-size: 1.2em;
+}
+.block ul {
+    margin-top: 8px;
+    margin-left: 15px;
+    font-size: 0.9em;
+}
+
+/* Committee Cards */
+.committee-grid, .contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.committee-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.committee-card:hover { transform: translateY(-5px); }
+.committee-card h4 { font-size: 1em; }
+.committee-card p { font-size: 0.9em; }
+
+/* Accordion for schedule - Now also acts as tab trigger */
+.accordion {
+  max-width: 100%;
+  margin: auto;
+}
+.accordion-item {
+  background: #fff;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.accordion-header {
+  padding: 15px;
+  cursor: pointer;
+  background: #0066cc;
+  color: #fff;
+  font-size: 1.1em;
+  transition: background 0.3s, transform 0.3s;
+}
+/* Tab Hover Highlight */
+.accordion-header:hover {
+  background: #004080; /* Darker blue on hover */
+  transform: scale(1.01); /* Subtle highlight effect */
+}
+.accordion-body {
+  display: none;
+  padding: 15px;
+  background: #f9f9f9;
+}
+.accordion-body p { 
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Contact */
+.contact-card {
+  background: #f0f4ff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+footer .quick-links {
+  margin-top: 15px;
+}
+
+footer .quick-links h3 {
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+footer .quick-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+footer .quick-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 0.9em;
+}
+
+footer .quick-links ul li a:hover {
+  color: #00b0f0;
+}
+
+/* -------------------- Modal/Popup Styles -------------------- */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 2000; /* High z-index to be on top of everything */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6); /* Black background with opacity */
+  backdrop-filter: blur(4px); /* Blur effect */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 10% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%; /* Responsive width */
+  max-width: 800px; /* Max width for large screens */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.modal-title {
+  /* Removed modal-title styling to let H4 within body handle the look */
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  text-align: center;
+  font-size: 1.5em; /* Set a default size */
+  color: #004080;
+}
+.modal-title span {
+  display: block !important; /* Ensure both spans are block elements */
+}
+
+.modal-body h4.hidden-tab-title {
+  font-size: 1.5em;
+  color: #004080;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eaf6ff;
+  text-align: center;
+}
+
+.modal-body h5 {
+  font-size: 1.1em;
+  color: #222;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border-left: 4px solid #0066cc;
+  padding-left: 8px;
+}
+
+/* Formatting for new content inside modal */
+.modal-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  font-size: 0.9em;
+}
+.modal-body table th,
+.modal-body table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.modal-body table th {
+  background-color: #f0f4ff;
+  color: #004080;
+}
+
+.modal-body ul, .modal-body ol {
+  margin-left: 20px;
+  padding-left: 0;
+  margin-top: 10px;
+}
+.modal-body li {
+  margin-bottom: 8px;
+}
+
+.speaker-item {
+  border-left: 3px solid #0066cc;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.hidden-content {
+  display: none;
+}
+
+/* -------------------- Media Queries for Tablet and Desktop -------------------- */
+@media (min-width: 768px) {
+  .logo-bar img {
+    height: 60px;
+  }
+  
+  .hamburger-menu {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links-container {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  nav ul {
+    flex-direction: row;
+    margin-top: 0;
+    gap: 15px;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 6px 10px;
+  }
+
+  .lang-switch {
+    margin-top: 0;
+  }
+
+  #home {
+    padding-top: 150px;
+  }
+
+  .hero-content {
+    max-width: 80%;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  .hero h2 {
+    font-size: 1.8em;
+  }
+  .hero h3 {
+    font-size: 1.5em;
+  }
+  .hero p {
+    font-size: 1.2em;
+  }
+
+  .countdown div {
+    padding: 10px 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .btn {
+    width: auto;
+  }
+  
+  .slideshow-controls {
+    /* Adjusted for desktop view */
+    bottom: -10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 20px;
+  }
+  
+  .dots {
+    /* Adjusted for desktop view */
+    bottom: 25px;
+    gap: 8px;
+  }
+
+  section h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+  }
+  
+  #contact {
+    padding: 50px 30px 40px; /* Adjusted desktop padding for contact */
+  }
+
+  .about-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .block {
+      flex: 1;
+      min-width: 45%;
+  }
+  .block h3 {
+      font-size: 1.5em;
+  }
+
+  /* Committee & Contact Grids */
+  .committee-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .committee-card h4, .contact-card h4 {
+    font-size: 1.2em;
+  }
+  .committee-card p, .contact-card p {
+    font-size: 1em;
+  }
+  
+  /* Accordion for schedule */
+  .accordion-header {
+      font-size: 1.2em;
+  }
+  .accordion-body p {
+      font-size: 1.1em;
+  }
+}
+
+/* Optional: Additional breakpoint for large desktops */
+@media (min-width: 1200px) {
+  .logo-bar img {
+    height: 70px;
+  }
+
+  .hero-content {
+    max-width: 60%;
+  }
+
+  .about-container {
+    flex-direction: row;
+  }
+
+  .block {
+    min-width: 300px;
+  }
+}
