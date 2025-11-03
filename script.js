@@ -5,6 +5,19 @@ function switchLang(lang) {
   document.getElementById("lang-en").classList.toggle("active", lang==="en");
   document.getElementById("lang-hi").classList.toggle("active", lang==="hi");
   
+  // *** START: UPDATED CODE FOR BROCHURE LINK ***
+  const brochureBtn = document.getElementById("download-brochure-btn");
+  if (brochureBtn) {
+    if (lang === "en") {
+      // Assuming you create a separate English PDF (e.g., pages 3 and 4)
+      brochureBtn.href = "assets/brochure.pdf"; 
+    } else {
+      // Assuming you create a separate Hindi PDF (e.g., pages 1 and 2)
+      brochureBtn.href = "assets/brochure.pdf"; 
+    }
+  }
+  // *** END: UPDATED CODE FOR BROCHURE LINK ***
+  
   // Update modal content immediately if it's open
   const modal = document.getElementById("popup-modal");
   if (modal.style.display === "block") {
